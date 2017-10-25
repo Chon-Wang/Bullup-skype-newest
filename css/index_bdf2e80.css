@@ -690,15 +690,17 @@ html,body {
 #wrap.full {
 	height: 100%
 }
-
 .swiper-container {
 	width: 100%;
 	min-width: 1200px;
-	max-width: 1920px;
+	/*max-width: 1920px;*/
+	height: 100%;
 	color: #fff;
 	position: relative;
 	*overflow: visible;
-	background: url(http://res.tia.netease.com/pc/gw/20170426154756/img/bg1_63c5936.jpg) center center no-repeat
+	background: url(http://res.tia.netease.com/pc/gw/20170426154756/img/bg1_63c5936.jpg) no-repeat;
+	background-size: 100%
+
 }
 
 .swiper-container .border {
@@ -830,11 +832,15 @@ html,body {
 }
 
 .content {
-	z-index: 1
+	z-index: 1;
+	height: 100%
 }
 
 .page_1 {
-	background: url(../img/index.png) center top no-repeat
+	background: url(../img/index.png) center top no-repeat;
+	background-size: 100% 100%;
+	height: 100%;
+	min-width:1724px;
 }
 
 .page_1 .center_con {
