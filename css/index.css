@@ -138,11 +138,11 @@
     display: block;
     width: 137px;
     height: 248px;
-    position: fixed;
-    top: 95%;
+    position: absolute;
+    top: 133%;
     margin-top: -124px;
-    right: 0;
-    background: url(../img/erwekma.jpg) no-repeat;
+    right: 1;
+  
 }
 .new_first {
     font-size: 18px;
@@ -234,7 +234,7 @@
     position: fixed;
     right: 51px;
     color: #fff;
-    top:22%;
+    top:20%;
     display: block;
     z-index: 1000;
     border:1px solid #b49756;

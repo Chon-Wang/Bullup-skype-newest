@@ -752,9 +752,9 @@ html,body {
 
 .swiper-container .right_nav {
 	width: 100px;
-	height: 400px;
+	height: 425px;
 	position: fixed;
-	top: 50%;
+	top: 45%;
 	right: 45px;
 	z-index: 2;
 	margin-top: -160px;

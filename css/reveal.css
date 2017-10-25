@@ -54,8 +54,9 @@
     border-radius: 10px;
     width: 84px;
     height: 56px;
-    position: fixed;
-    top: 75%;
+   margin-left: 8px;
+    margin-bottom: 10px;
+ 
     font-size: 14px;
     color: #fff;
     right: 43px;

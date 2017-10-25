@@ -46,10 +46,7 @@
     </head>
 
     <body>
-          <div class="zhaoshang" >
-          <a  style="float: left;margin-top: 15px;color: #b49756;">斗牛招商入口</a>
-          <img src="img/zhaoshang.png" width="50" height="50" style="float: left;margin-left: 5px;">
-          </div>
+         
             
            <li ><a class="btn-floating red" href="#create_room_modall"><i class="fa fa-handshake-o" aria-hidden="true"></i></a></li>
            <li ><a id="turn_to_room_btn" class="btn-floating blue" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class=" fa fa-hourglass-start" aria-hidden="true"></i></a><li>
@@ -65,15 +62,22 @@
 
                  
             <div class="right_nav" style="z-index: 1000;">
-             
+              <div class="zhaoshang" >
+          <a  style="float: left;margin-top: 15px;color: #b49756;width: 90px;">斗牛招商入口</a>
+          <img src="img/zhaoshang.png" width="50" height="50" style="float: left;margin-left: 5px;">
+          </div>
                 <a href="" class="xwgg on"><i></i>官网首页</a>
                 <a href="javascript:;" class="xwgg" style="width: 120%;"><i></i>斗牛介绍</a>
                 <a href="javascript:;" class="xwgg"><i></i>赏金联赛</a>
                 <a href="javascript:;" class="xwgg"><i></i>新闻动态</a>
                 <a href="javascript:;" class="xwgg off" ><i></i>公司发展</a>
                <!--  <a href="javascript:;" class="xwgg "><i></i>团队介绍</a> -->
+                <div class="codeewm" >
+                <p class="Backtotop" ><img src="img/fanhui.png" ></p>
+                <div><img src="img/erwekma.jpg"></div>
                 
-                
+                </div>
+               
                  
             </div>
            
@@ -270,8 +274,7 @@
          <!--团队介绍-->
         <!-- <div id="contactus" class="hey">
         </div> -->
-    <p class="Backtotop" ><img src="img/fanhui.png" ></p>
-    <a href="#"  class="codeewm"></a>
+
       <div id="bg_music"></div>
       
         <div id="myModal" class="reveal-modal">
@@ -359,7 +362,7 @@ $(document).ready(function(){
         $(this).addClass("on").siblings().removeClass("on");
         var i=$(this).index();
       /*  console.log(i);*/
-        var offtp = $('.hey').eq(i).offset().top;
+        var offtp = $('.hey').eq(i-1).offset().top;
         /*console.log(offtp);*/
         $('body').animate({scrollTop:offtp},'slow','easeOutBack')
     })
