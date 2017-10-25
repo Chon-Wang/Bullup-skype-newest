@@ -240,10 +240,10 @@
     cursor: pointer;
 }
 .zhaoshang{
-    position: fixed;
-    right: 51px;
+    position: absolute;
+    right: 10px;
     color: #fff;
-    top:25%;
+    top:-8%;
     display: block;
     z-index: 1000;
     border:1px solid #b49756;
