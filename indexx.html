@@ -78,9 +78,7 @@
                     <div class="border1">
                         <div class="center_con">
                             <div class="slogan"></div>
-                         
-
-                            <a href="javascript:;" class="get_code btn  ss-click big-link"  data-reveal-id="myModal">赛事报名</a>
+                             <a href="javascript:;" class="get_code btn  ss-click big-link "  data-reveal-id="myModal">赛事报名</a>
                            <!-- <a href="javascript:;" class="btn_dl btn xz-click big-link"    data-reveal-id="myModal2" id="Down" >下载客户端</a>-->
                             <a download="" href="./斗牛电竞安装包.zip" target="blank" class="btn_dl btn xz-click big-link"    data-reveal-id="myModal2"  id="downPdf">下载客户端</a> 
                         </div>
@@ -348,34 +346,27 @@ $(document).ready(function(){
  //楼层导航定位
  $(function  () {
     $('.right_nav .xwgg').click(function  () {
-        $(this).addClass("on").siblings().removeClass("on");
         var i=$(this).index();
       /*  console.log(i);*/
-        var offtp = $('.hey').eq(i-1).offset().top;
+        var offtp = $('.hey').eq(i).offset().top;
+        $(this).addClass("on").siblings().removeClass("on");
         /*console.log(offtp);*/
         $('body').animate({scrollTop:offtp},'slow','easeOutBack')
     })
         $(window).scroll(function(){
-                     var winH = $(window).height();//可视窗口高度
+                    // console.log($(".hey").eq(1).offset().top);
                      var iTop = $(window).scrollTop();//鼠标滚动的距离
-                    /* console.log(iTop);
-                     console.log(iTop);*/
-                     if(iTop>=$('.content').height()){
+                     if(iTop>=$('.wrap').height()){
                     
-                     //鼠标滑动式改变 
-                   /*  console.log($('.hey').size()); */
-                     $.each($('.hey'),function(n,l){
-                        if(iTop >= $(l).offset().top){
-                            /*console.log($(l).offset().top);
-                            console.log(iTop);
-                            console.log(n);*/
-                            $('.right_nav .xwgg').removeClass('on');
-                            $('.right_nav .xwgg').eq(n).addClass('on');
-                        }
-                     })
-                     }else{
-                        $('.right_nav .xwgg').removeClass('on');
-                        $('.right_nav .xwgg').eq(0).addClass('on');
+                       //鼠标滑动式改变 
+                     /*  console.log($('.hey').size()); */
+                       $.each($('.hey'),function(n,l){
+                          if(iTop >= $(l).offset().top){
+                              $('.right_nav .xwgg').eq(n).addClass('on').siblings().removeClass("on");
+                          }
+                       })
+                     }else if(iTop <= ($('.wrap').height()/2)){
+                        $('.right_nav .xwgg').eq(0).addClass('on').siblings().removeClass("on");
                      }
         });
  });
@@ -386,7 +377,7 @@ $(document).ready(function(){
       /* $(".tempWrap .sd_list_item").eq(index).show(1000).siblings().hide();*/
     });
 
-
+ 
   //加载背景音乐，并自动播放
         $('#bg_music').append('<embed id="m_bg_music"  loop=true  volume="60" autostart=true hidden=true src="Two Steps From Hell - Victory (Instrumental).mp3" />');
         $('#bg_music_btn').click(function(){

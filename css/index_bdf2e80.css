@@ -844,8 +844,8 @@ html,body {
 }
 
 .page_1 .center_con {
-	width: 523px;
-	height: 340px;
+	width: 1000px;
+	height: 500px;
 	position: absolute;
 	top: 150px;
 	left: 50%;
@@ -862,8 +862,9 @@ html,body {
 }
 
 .page_1 .center_con .slogan {
-	width: 523px;
-	height: 250px;
+	    margin-left: -232px;
+	width: 1000px;
+	height: 500px;
 	background: url(../img/tatale.png)
 }
 
@@ -889,17 +890,27 @@ html,body {
 	height: 52px;
 	display: block;
 	position: absolute;
-	top: 285px;
-	font-size: 18px;
+	 top: 500px;
 	text-align: center;
 	line-height: 52px;
 	color: #aa864c;
-	background: url(../img/btn_f5a76ae.png);
-	text-shadow: 0 1px 2px rgba(0,0,0,.6)
+	   text-align: center;
+    line-height: 30px;
+    border-radius: 10px;
+  line-height: 52px;
+   margin-left: 8px;
+    margin-bottom: 10px;
+ 
+    font-size: 18px;
+
+    right: 43px;
+    border: 1px solid #b49756;
+    cursor: pointer;
+    z-index: 1000;
 }
 
 .page_1 .center_con .btn:hover {
-	background: url(http://res.tia.netease.com/pc/gw/20170426154756/img/btn1_e09953b.png)
+	 box-shadow: 2px 2px 50px 4px #b49756;
 }
 
 .page_1 .center_con .get_code {
